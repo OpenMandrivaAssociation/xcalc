@@ -1,5 +1,5 @@
 Name: xcalc
-Version: 1.0.3
+Version: 1.0.4
 Release: %mkrel 1
 Summary: Scientific calculator for X
 Group: Development/X11
