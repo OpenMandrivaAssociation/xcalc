@@ -1,11 +1,10 @@
 Name: xcalc
-Version: 1.0.4.1
-Release: %mkrel 3
+Version: 1.0.5
+Release: 1
 Summary: Scientific calculator for X
 Group: Development/X11
-Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: libxt-devel >= 1.0.0
 BuildRequires: libxaw-devel >= 1.0.1
@@ -23,14 +22,9 @@ or an HP-10C.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/xcalc
 %{_datadir}/X11/app-defaults/XCalc
 %{_datadir}/X11/app-defaults/XCalc-color
