@@ -1,6 +1,6 @@
 Name: xcalc
 Version: 1.0.5
-Release: 3
+Release: 4
 Summary: Scientific calculator for X
 Group: Development/X11
 Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
