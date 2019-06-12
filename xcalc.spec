@@ -1,5 +1,5 @@
 Name: xcalc
-Version: 1.0.7
+Version: 1.1.0
 Release: 1
 Summary: Scientific calculator for X
 Group: Development/X11
@@ -15,14 +15,14 @@ Xcalc is a scientific calculator desktop accessory that can emulate a TI-30
 or an HP-10C.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/xcalc
