@@ -1,9 +1,9 @@
 Name: xcalc
-Version: 1.1.0
+Version: 1.1.1
 Release: 1
 Summary: Scientific calculator for X
 Group: Development/X11
-Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License: MIT
 
 BuildRequires: pkgconfig(xt) >= 1.0.0
@@ -26,6 +26,5 @@ or an HP-10C.
 
 %files
 %{_bindir}/xcalc
-%{_datadir}/X11/app-defaults/XCalc
-%{_datadir}/X11/app-defaults/XCalc-color
-%{_mandir}/man1/xcalc.1*
+%{_datadir}/X11/app-defaults/XCalc*
+%doc %{_mandir}/man1/xcalc.1*
